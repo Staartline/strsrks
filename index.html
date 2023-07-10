@@ -6,6 +6,8 @@
 	<title>STARSHARKS LEVIATHAN</title>
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
 </head>
 <body>
 
@@ -22,9 +24,11 @@
 			<div class="header">
 				<!--Buttons Here-->
 				<div class="buttons">
-					<button>leviathan's legacy</button>
-					<button>contact</button>
-					<button>history</button>
+					<button onclick="javascript:toHome();">Home</button>
+					<button onclick="javascript:toSocials();">Legacy</button>
+					<button onclick="javascript:toRef();">Reference</button>
+					<button onclick="javascript:toArt();">Art</button>
+					<button onclick="javascript:toFAQ();">FAQ</button>
 				</div>
 			</div>
 
@@ -47,15 +51,12 @@
 						<h2>About Me</h2>
 					</div>
 					<div class="infoabout">
-						<p>UNDER CONSTRUCTION<p>
-
 						<p>Hey there, I’m Leviathan, a Vtuber and Artist.</p>
 						<p>My pronouns are He/They and I like to drink coffee and talk about the little characters that I made up.</p>
 
 						<ul>
 							<li>Find me on Twitch <a href="https://www.twitch.tv/star_sharks" target="_blank">Here</a></li>
 							<li>Find me on Twitter <a href="https://twitter.com/star_sharks" target="_blank">Here</a></li>
-							<li>Find me Reblogging Shitposts <a href="https://www.iketunes.tumblr.com/" target="_blank">Here</a></li>
 						</ul>
 						
 						<p>Commission Status as of 9/19/22: QUEUE FULL </p>
@@ -71,7 +72,42 @@
 	
 	</div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> 
+<script type="text/javascript">
+	
 
-<script type="text/javascript"></script>
+	function toHome(){
+		$(".infotitle").html("<h2>About Me</h2>");
+		$(".infoabout").html("<p>Hey there, I’m Leviathan, a Vtuber and Artist.</p><p>My pronouns are He/They and I like to drink coffee and talk about the little characters that I made up.</p><ul><li>Find me on Twitch <a href='https://www.twitch.tv/star_sharks' target='_blank'>Here</a></li><li>Find me on Twitter <a href='https://twitter.com/star_sharks' target='_blank'>Here</a></li><li>Find me Reblogging Shitposts <a href='https://www.iketunes.tumblr.com/' target='_blank'>Here</a></li></ul><p>Commission Status as of 9/19/22: QUEUE FULL </p>");
+
+	}
+
+	function toSocials(){
+		$(".infotitle").html("<h2>Socials</h2>");
+		$(".infoabout").html("<ul><li>Find me on Twitch <a href='https://www.twitch.tv/star_sharks' target='_blank'>Here</a></li><li>Find me on Twitter <a href='https://twitter.com/star_sharks' target='_blank'>Here</a></li><li>Find me on Tumblr<a href='https://star-sharks.tumblr.com/' target='_blank'>Here</a></li><li>Find me on TikTok <a href='https://www.tiktok.com/@star__sharks' target='_blank'>Here</a></li><li>Find me on Instagram (IRL Photos visible) <a href='https://www.instagram.com/leviathanslegacy/' target='_blank'>Here</a></li></ul>");
+
+
+	}
+
+	function toArt(){
+		$(".infotitle").html("<h2>Art Gallery</h2");
+		$(".infoabout").html("<img src='' alt='Leviathan Reference' width='50%'");
+
+
+	}	
+
+	function toRef(){
+		$(".infotitle").html("<h2>References</h2>");
+		$(".infoabout").html("<img src='' alt='Leviathan Reference' width='50%'");
+
+	}
+
+	function toFAQ(){
+		$(".infotitle").html("<h2>FAQ</h2>");
+		$(".infoabout").html("<p>Have any questions?</p> <p>Feel free to contact me at any relevant social media, and I'll get back to you as soon as I can.</p>");
+
+	}
+
+</script>
 </body>
 </html>
