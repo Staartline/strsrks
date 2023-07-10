@@ -12,13 +12,11 @@
 
 }
 
-
 body{
 	background-color: var(--LeviGrey);
 	font-family: var(--mainfont);
 	margin: 0px;
 	color: var(--LeviDarkGrey);
-	
 }
 
 /*TITLE*/
@@ -121,7 +119,6 @@ body{
 .aboutdesc{
 	width:inherit;
 	border-radius: var(--borderradi);
-	height: 100px;
 	background-color: var(--LeviWhite);
 	font-size: 12px;
 
